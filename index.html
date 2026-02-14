@@ -1,115 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rajarshi Bhattacharjee
-        </title>
-        <meta name = "description"  content = "homepage">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    
-    <body>
-        
-        <h2> Rajarshi Bhattacharjee</h2>
-	<img src="https://rbhattacharj.github.io/images/headshot.jpeg"  id="photo">        
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rajarshi Bhattacharjee</title>
+    <meta name="description" content="Rajarshi Bhattacharjee - PhD student in Theoretical Computer Science at UMass Amherst">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
 
-<p> I am a fifth year PhD student in the <a href="https://www.cics.umass.edu/">Manning College of Information and Computer Sciences</a> at University of Massachusetts Amherst. </p> 
+<body>
+    <div class="container">
 
-<p> I'm a student in the <a href="http://groups.cs.umass.edu/theory/">Theoretical Computer Science group</a>. I'm advised by <a href="https://people.cs.umass.edu/~cmusco/">Prof. Cameron Musco</a>.</p>
+        <nav>
+            <a href="#about">Home</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="files/CV_Raj.pdf">CV</a>
+        </nav>
 
-<!--<p> Prior to this, I was working as a research assistant at <a href="https://www.iitm.ac.in/">IIT Madras</a> with <a href="https://people.cs.umass.edu/~cmusco/">Prof. Abhishek Sinha</a> on problems related to online learning and on minimizing the age-of-information of users in a communication network. Even before that, 
-I was a research assitant at <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a> with <a href="https://sites.google.com/site/nareshmanwani/">Prof. Naresh Manwani</a> working on problems in online learning and machine learning.-->
-        
-        <p>I have a masters' degree in Computer Science from <a href="https://www.isical.ac.in/">Indian Statistical Institute</a> and a bachelors degree in mechanical engineering from <a href="http://www.jaduniv.edu.in/">Jadavpur University</a>, India. 
-		You can check out my resume <a href="https://rbhattacharj.github.io/files/CV_Raj.pdf">here</a>.
-		<!--In between, I have also worked in the industry as a consultant and as a data scientist.-->
-		</p>
-            
-        <p>  <b> Email</b> : rbhattacharj AT umass.edu </p>
-	<p>  <a href="https://scholar.google.co.in/citations?hl=en&user=vn2qvWYAAAAJ&view_op=list_works">Google Scholar</a>,  <a href="https://rbhattacharj.github.io/files/CV_Raj.pdf">CV</a>
-        
- 
-	<h2> Research Interests </h2>
-        <p> 
-I am broadly interested in randomized algorithms and machine learning. Specifically, I work on designing efficient (with <i>sublinear</i> time/space/regret) algorithms in the following domains:
-<ul>
-<li><b>Randomized Algorithms for linear algebraic tasks</b> like spectrum estimation. </li>
-<li><b>Online learning</b>, specifically, <i>online caching</i> and <i>resource allocation</i> problems. </li>
-<li><b>Algorithmic  fairness</b> and <b>differential privacy</b> preserving algorithms.</li>
-</ul> 
-Recently, some of the problems I've been working on include algorithms which estimate the spectrum of matrix with a small number of matrix vector multiplications and online algorithms for fair resource allocation. I'm also working on algorithms for <i>fast tensor vector products</i> with applications to fast and memory efficient computation of the <i>attention layer of transformers</i> using techniques from randomized linear algebra as a part of my internship at Adobe Research.  
-<!--I'm also interested in understanding the tradeoffs between the computational and statistical efficiency of learning algorithms.--> 
+        <header id="about">
+            <img src="images/headshot.jpeg" alt="Rajarshi Bhattacharjee">
+            <div class="header-info">
+                <h1>Rajarshi Bhattacharjee</h1>
+                <p>PhD Student<br>
+                    <a href="https://www.cics.umass.edu/">Manning College of Information and Computer Sciences</a><br>
+                    University of Massachusetts Amherst
+                </p>
+                <p class="contact-links">
+                    <span>Email: rbhattacharj AT umass.edu</span><br>
+                    <a href="https://scholar.google.co.in/citations?hl=en&user=vn2qvWYAAAAJ&view_op=list_works">Google Scholar</a> &middot;
+                    <a href="files/CV_Raj.pdf">CV</a>
+                </p>
+            </div>
+        </header>
 
+        <main>
+            <section id="bio">
+                <p>I am a fifth year PhD student in the <a href="https://www.cics.umass.edu/">Manning College of Information and Computer Sciences</a> at University of Massachusetts Amherst.</p>
+                <p>I'm a student in the <a href="http://groups.cs.umass.edu/theory/">Theoretical Computer Science group</a>. I'm advised by <a href="https://people.cs.umass.edu/~cmusco/">Prof. Cameron Musco</a>.</p>
+                <p>I have a masters' degree in Computer Science from <a href="https://www.isical.ac.in/">Indian Statistical Institute</a> and a bachelors degree in mechanical engineering from <a href="http://www.jaduniv.edu.in/">Jadavpur University</a>, India.</p>
+            </section>
 
-<!--I am broadly interested in theoretical computer science. My specific interests include the Design and Analysis of Algorithms, Causal Inference and Machine Learning.
-      -->	  
-</p>    
+            <section id="research">
+                <h2>Research Interests</h2>
+                <p>
+                    I am broadly interested in randomized algorithms and machine learning. Specifically, I work on designing efficient (with <i>sublinear</i> time/space/regret) algorithms in the following domains:
+                </p>
+                <ul>
+                    <li><b>Randomized Algorithms for linear algebraic tasks</b> like spectrum estimation.</li>
+                    <li><b>Online learning</b>, specifically, <i>online caching</i> and <i>resource allocation</i> problems.</li>
+                    <li><b>Algorithmic fairness</b> and <b>differential privacy</b> preserving algorithms.</li>
+                </ul>
+                <p>
+                    Recently, some of the problems I've been working on include algorithms which estimate the spectrum of matrix with a small number of matrix vector multiplications and online algorithms for fair resource allocation. I'm also working on algorithms for <i>fast tensor vector products</i> with applications to fast and memory efficient computation of the <i>attention layer of transformers</i> using techniques from randomized linear algebra as a part of my internship at Adobe Research.
+                </p>
+            </section>
 
-<p>  
- Some selected publications and preprints are given below. </p>
-        
-        
-       
-        <h2> Publications </h2>
-	
-        <ul>
-        <li><b> Improved Spectral Density Estimation via Explicit and Implicit Deflation. </b><br>
-			Rajarshi Bhattacharjee, Rajesh Jayaram, Cameron Musco, Christopher Musco, Archan Ray.<br>
-			ACM-SIAM Symposium on Discrete Algorithms <b>(SODA) 2025 </b>
-			[<a href="https://arxiv.org/pdf/2410.21690.pdf">arXiv</a>]
-		</li>
+            <section id="publications">
+                <h2>Publications</h2>
+                <p>Some selected publications and preprints are given below.</p>
+                <ul class="pub-list">
+                    <li>
+                        <b>Improved Spectral Density Estimation via Explicit and Implicit Deflation.</b><br>
+                        Rajarshi Bhattacharjee, Rajesh Jayaram, Cameron Musco, Christopher Musco, Archan Ray.<br>
+                        ACM-SIAM Symposium on Discrete Algorithms <b>(SODA) 2025</b><br>
+                        [<a href="https://arxiv.org/pdf/2410.21690.pdf">arXiv</a>]
+                    </li>
 
-		<li><b> Universal Matrix Sparsifiers and Fast Deterministic Algorithms for Linear Algebra. </b><br>
-			Rajarshi Bhattacharjee, Gregory Dexter, Cameron Musco, Archan Ray, Sushant Sachdeva, David P. Woodruff.<br>
-			Innovations in Theoretical Computer Science <b> ITCS 2024</b> 
-			[<a href="https://arxiv.org/pdf/2305.05826.pdf">arXiv</a>]
-		</li>
+                    <li>
+                        <b>Universal Matrix Sparsifiers and Fast Deterministic Algorithms for Linear Algebra.</b><br>
+                        Rajarshi Bhattacharjee, Gregory Dexter, Cameron Musco, Archan Ray, Sushant Sachdeva, David P. Woodruff.<br>
+                        Innovations in Theoretical Computer Science <b>(ITCS) 2024</b><br>
+                        [<a href="https://arxiv.org/pdf/2305.05826.pdf">arXiv</a>]
+                    </li>
 
+                    <li>
+                        <b>No-regret Algorithms for Fair Resource Allocation.</b><br>
+                        Abhishek Sinha, Ativ Joshi, Rajarshi Bhattacharjee, Cameron Musco, Mohammad Hajiesmaili.<br>
+                        Conference on Neural Information Processing Systems <b>(NeurIPS) 2023</b><br>
+                        [<a href="https://arxiv.org/pdf/2303.06396.pdf">arXiv</a>]
+                    </li>
 
-		<li><b> No-regret Algorithms for Fair Resource Allocation. </b><br>
-			Abhishek Sinha, Ativ Joshi, Rajarshi Bhattacharjee, Cameron Musco, Mohammad Hajiesmaili.<br>
-			Conference on Neural Information Processing Systems <b> NeuRIPS 2023 </b> 
-			[<a href="https://arxiv.org/pdf/2303.06396.pdf">arXiv</a>]</li>
-		</li>
-		
-		<li><b> Sublinear Time Eigenvalue Approximation via Random Sampling </b><br>
-			Rajarshi Bhattacharjee, Gregory Dexter, Petros Drineas, Cameron Musco and Archan Ray.<br>
-			International Colloquium on Automata, Languages, and Programming <b>ICALP 2023 </b> <br>
-			Extended version in <b>Algorithmica </b>
-			[<a href="https://arxiv.org/pdf/2109.07647.pdf">arXiv</a>]</li>
-	
-		<li><b> Fundamental Limits on the Regret of Online Network-Caching</b><br>
-			Rajarshi Bhattacharjee, Subhankar Banerjee and Abhishek Sinha<br>
-			<b>ACM SIGMETRICS 2020</b><br>
-			Also published in Proceedings of the ACM on the Measurement and Analysis of Computing Systems (<b>POMACS</b>) <br>
-			[<a href="https://dl.acm.org/doi/pdf/10.1145/3392143?casa_token=Pf9o8f3KvqwAAAAA:HAhLVktVarB4WlEatTlREQfIXyI9koL952G-4VHXYGNn-qzeEpb5J8EQGJstGWL__TX924eEfpQ">PDF</a>, 
-			<a href="https://dl.acm.org/doi/abs/10.1145/3392143">proceedings</a>]</li>
+                    <li>
+                        <b>Sublinear Time Eigenvalue Approximation via Random Sampling.</b><br>
+                        Rajarshi Bhattacharjee, Gregory Dexter, Petros Drineas, Cameron Musco and Archan Ray.<br>
+                        International Colloquium on Automata, Languages, and Programming <b>(ICALP) 2023</b><br>
+                        Extended version in <b>Algorithmica</b><br>
+                        [<a href="https://arxiv.org/pdf/2109.07647.pdf">arXiv</a>]
+                    </li>
 
-		<li><b> Optimizing the Age-of-Information for Mobile Users in Adversarial and Stochastic Environments. </b><br>
-			Rajarshi Bhattacharjee, Subhankar Banerjee and Abhishek Sinha<br>
-			<b>IEEE Transactions on Information Theory </b>. <br>
-			[<a href="https://arxiv.org/pdf/2011.05563.pdf">arXiv</a>]</li>
+                    <li>
+                        <b>Fundamental Limits on the Regret of Online Network-Caching.</b><br>
+                        Rajarshi Bhattacharjee, Subhankar Banerjee and Abhishek Sinha.<br>
+                        <b>ACM SIGMETRICS 2020</b><br>
+                        Also published in Proceedings of the ACM on the Measurement and Analysis of Computing Systems <b>(POMACS)</b><br>
+                        [<a href="https://dl.acm.org/doi/pdf/10.1145/3392143?casa_token=Pf9o8f3KvqwAAAAA:HAhLVktVarB4WlEatTlREQfIXyI9koL952G-4VHXYGNn-qzeEpb5J8EQGJstGWL__TX924eEfpQ">PDF</a>,
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3392143">proceedings</a>]
+                    </li>
 
-		<li><b> Fundamental limits of age-of-information in stationary and non-stationary environments.</b><br>
-			Subhankar Banerjee, Rajarshi Bhattacharjee and Abhishek Sinha<br>
-			2020 IEEE International Symposium on Information Theory <b>ISIT 2020</b> <br>
-			[<a href="https://arxiv.org/pdf/2001.05471.pdf">arXiv</a>, <a href="https://ieeexplore.ieee.org/document/9174054">proceedings</a>]</li>
-		
-		<li><b> Competitive algorithms for minimizing the maximum age-of-information</b><br>
-			Rajarshi Bhattacharjee and Abhishek Sinha<br>
-			Workshop on MAthematical performance Modeling and Analysis (MAMA) at <b>ACM SIGMETRICS 2020</b><br>
-			[<a href="https://home.iitm.ac.in/abhishek.sinha/MAMA2020Sinha.pdf">PDF</a>, <a href="https://dl.acm.org/doi/abs/10.1145/3439602.3439606">proceedings</a>]]</li>
-			
-		<li><b> Online Algorithms for Multiclass Classification Using Partial Labels</b><br>
-			Rajarshi Bhattacharjee and Naresh Manwani<br>
-			Proceedings of the Pacific-Asia Conference on Knowledge Discovery and Data Mining 2020 <b>(PAKDD 2020)</b><br>
-			[<a href="https://arxiv.org/pdf/1912.11367.pdf">arXiv</a>, <a href="https://doi.org/10.1007/978-3-030-47426-3_20">proceedings</a>]]</li>
+                    <li>
+                        <b>Optimizing the Age-of-Information for Mobile Users in Adversarial and Stochastic Environments.</b><br>
+                        Rajarshi Bhattacharjee, Subhankar Banerjee and Abhishek Sinha.<br>
+                        <b>IEEE Transactions on Information Theory</b><br>
+                        [<a href="https://arxiv.org/pdf/2011.05563.pdf">arXiv</a>]
+                    </li>
 
-	</ul>
-        
-        
-    </body>
-    
+                    <li>
+                        <b>Fundamental limits of age-of-information in stationary and non-stationary environments.</b><br>
+                        Subhankar Banerjee, Rajarshi Bhattacharjee and Abhishek Sinha.<br>
+                        2020 IEEE International Symposium on Information Theory <b>(ISIT) 2020</b><br>
+                        [<a href="https://arxiv.org/pdf/2001.05471.pdf">arXiv</a>,
+                        <a href="https://ieeexplore.ieee.org/document/9174054">proceedings</a>]
+                    </li>
+
+                    <li>
+                        <b>Competitive algorithms for minimizing the maximum age-of-information.</b><br>
+                        Rajarshi Bhattacharjee and Abhishek Sinha.<br>
+                        Workshop on MAthematical performance Modeling and Analysis (MAMA) at <b>ACM SIGMETRICS 2020</b><br>
+                        [<a href="https://home.iitm.ac.in/abhishek.sinha/MAMA2020Sinha.pdf">PDF</a>,
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3439602.3439606">proceedings</a>]
+                    </li>
+
+                    <li>
+                        <b>Online Algorithms for Multiclass Classification Using Partial Labels.</b><br>
+                        Rajarshi Bhattacharjee and Naresh Manwani.<br>
+                        Proceedings of the Pacific-Asia Conference on Knowledge Discovery and Data Mining 2020 <b>(PAKDD 2020)</b><br>
+                        [<a href="https://arxiv.org/pdf/1912.11367.pdf">arXiv</a>,
+                        <a href="https://doi.org/10.1007/978-3-030-47426-3_20">proceedings</a>]
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+    </div>
+</body>
+
 </html>
